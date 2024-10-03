@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root{
+    --primarycolor: #edf2fc;
+    --secondarycolor: #212121;
+}
+
+.dark-theme{
+   --primarycolor: #000100;
+    --secondarycolor: #fff; 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+    background: var(--primarycolor);
+}
+
+.hero{
+    height: auto;
+    width: auto;
+    font-family: "Open Sans", calibri, Sans-Serif;
+    position: relative;
+    min-height: 100vh;
+}
+
+nav{
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.logo{
+    font-size: 32px;
+    color: var(--secondarycolor);
+    text-decoration: none;
+    background: transparent;
+    font-weight: 500;
+    letter-spacing: 4px;
+}
+
+.cpr{
+    color: var(--secondarycolor);
+    font-size: 14px;
+}
+
+.cpr span{
+    color: #ff007f;
+}
+
+.navlinks{
+    display: flex;
+}
+
+.hamburger{
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--secondarycolor);
+
+}
+
+nav ul{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: var(--secondarycolor);
+}
+
+nav ul li a:hover{
+    color: #ff007f;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        top: 60px; /* Adjust based on your navbar height */
+        left: 0;
+        right: 0;
+        background-color: var(--primarycolor);
+        flex-direction: column;
+        align-items: center;
+        display: none; /* Hide the menu by default */
+    }
+    
+    .nav-links.active {
+        display: flex; /* Show menu when active */
+    }
+
+    .hamburger {
+        display: block; /* Show hamburger icon */
+    }
+
+    .nav-links li {
+        margin: 10px 0; /* Vertical spacing for items */
+    }
+}
+
+.info{
+    margin-right: 8%;
+    margin-top: 10%;
+    text-align: right;
+}
+
+.info h1{
+    font-size: 70px;
+    color: var(--secondarycolor);
+    margin-bottom: 20px;
+}
+
+.info span{
+    color: #ff007f;
+}
+
+.info p{
+    color: var(--secondarycolor);
+    line-height: 22px;
+}
+
+.info a{
+    background: var(--secondarycolor);
+    padding: 10px 18px;
+    text-decoration: none;
+    color: var(--primarycolor);
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+}
+
+.socials{
+    margin: 5% 8% 0;
+    text-align: right;
+}
+
+.socials p{
+    color: var(--secondarycolor);
+    line-height: 22px;
+}
+
+.socials a{
+    color: var(--primarycolor);
+    background: var(--secondarycolor);
+    font-size: 30px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    margin: 10px 0;
+    display: inline-block;
+}
+
+.socials a:hover{
+    color: #ff007f;
+}
+
+#icon{
+    width: 25px;
+    cursor: pointer;
+}
