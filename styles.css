@@ -177,7 +177,6 @@ nav ul li a:hover{
     .info p {
         font-size: 1rem; /* You can adjust this value as needed */
         line-height: 1.5; /* Adjust line height for better readability */
-        margin: 0 5%; /* Optional: Add some horizontal margin */
     }
 
     .info h1 {
